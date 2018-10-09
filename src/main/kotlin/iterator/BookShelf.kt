@@ -1,19 +1,15 @@
 package iterator
 
-class BookShelf(
-    maxSize: Int
-) : Aggregate {
-    private var last = 0
-    private val books = arrayOfNulls<Book>(maxSize)
+class BookShelf : Aggregate {
+    private val books = mutableListOf<Book>()
 
     fun getBookAt(index: Int) = books[index]
 
     fun appendBook(book: Book) {
-        this.books[last] = book
-        last++
+        this.books.add(book)
     }
 
-    fun getLength() = last
+    fun getLength() = books.size
 
     override fun iterator(): Iterator {
         return BookShelfIterator(this)
