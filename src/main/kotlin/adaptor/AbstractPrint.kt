@@ -1,6 +1,6 @@
 package adaptor
 
-interface Print {
+interface AbstractPrint {
     fun printWeak()
     fun printString()
 }

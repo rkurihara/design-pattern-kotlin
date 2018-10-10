@@ -1,6 +1,6 @@
 package adaptor
 
-open class Banner(
+open class AbstractBanner(
     private val string: String
 ) {
     fun showWithParen() {

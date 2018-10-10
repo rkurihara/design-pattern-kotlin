@@ -1,11 +1,11 @@
-import adaptor.PrintBanner
+import adaptor.AbstractPrintBanner
 import org.junit.Test
 
 class AdaptorTest {
 
     @Test
     fun adaptor() {
-        val p = PrintBanner("Hello")
+        val p = AbstractPrintBanner("Hello")
         p.printWeak()
         p.printString()
     }

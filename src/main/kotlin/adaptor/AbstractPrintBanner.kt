@@ -1,8 +1,8 @@
 package adaptor
 
-class PrintBanner(
+class AbstractPrintBanner(
     string: String
-) : Banner(string), Print {
+) : AbstractBanner(string), AbstractPrint {
     override fun printWeak() {
         showWithParen()
     }
