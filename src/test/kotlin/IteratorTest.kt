@@ -6,11 +6,12 @@ class IteratorTest {
 
     @Test
     fun iterator() {
-        val bookShelf = BookShelf(9).also {
+        val bookShelf = BookShelf().also {
             it.appendBook(Book("Around The World in 80 Days"))
             it.appendBook(Book("Bible"))
             it.appendBook(Book("Cinderella"))
             it.appendBook(Book("Daddy-Long_Legs"))
+            it.appendBook(Book("East of Eden"))
         }
         val it = bookShelf.iterator()
         while (it.hasNext()) {
