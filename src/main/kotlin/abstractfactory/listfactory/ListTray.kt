@@ -1,6 +1,6 @@
-package listfactory
+package abstractfactory.factory.listfactory
 
-import factory.Tray
+import abstractfactory.factory.Tray
 
 class ListTray(
     private val caption: String

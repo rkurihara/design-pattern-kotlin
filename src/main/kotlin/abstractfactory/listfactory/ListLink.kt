@@ -1,6 +1,6 @@
-package listfactory
+package abstractfactory.factory.listfactory
 
-import factory.Link
+import abstractfactory.factory.Link
 
 class ListLink(
     private val caption: String,

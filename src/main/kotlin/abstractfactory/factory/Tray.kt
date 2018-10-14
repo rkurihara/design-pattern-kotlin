@@ -1,4 +1,4 @@
-package factory
+package abstractfactory.factory
 
 abstract class Tray(caption: String) : Item(caption) {
 

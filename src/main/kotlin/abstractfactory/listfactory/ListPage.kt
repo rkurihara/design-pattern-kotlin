@@ -1,6 +1,6 @@
-package listfactory
+package abstractfactory.factory.listfactory
 
-import factory.Page
+import abstractfactory.factory.Page
 
 class ListPage(
     private val title: String,

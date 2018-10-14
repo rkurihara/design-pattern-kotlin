@@ -1,4 +1,4 @@
-import factory.Factory
+import abstractfactory.factory.Factory
 import org.junit.Test
 
 class AbstractFactoryTest {
@@ -8,7 +8,7 @@ class AbstractFactoryTest {
      */
     @Test
     fun abstractFactory() {
-        val factory = Factory.getFactory("listfactory.ListFactory")
+        val factory = Factory.getFactory("abstractfactory.factory.listfactory.ListFactory")
 
         val asahi = factory.createLink("朝日新聞", "http://www.asahi.com/")
         val yomiuri = factory.createLink("読売新聞", "http://www.yomiuri.co.jp/")

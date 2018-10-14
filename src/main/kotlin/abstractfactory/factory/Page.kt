@@ -1,4 +1,4 @@
-package factory
+package abstractfactory.factory
 
 import java.io.FileWriter
 

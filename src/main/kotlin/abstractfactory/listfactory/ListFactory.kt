@@ -1,9 +1,9 @@
-package listfactory
+package abstractfactory.factory.listfactory
 
-import factory.Factory
-import factory.Link
-import factory.Page
-import factory.Tray
+import abstractfactory.factory.Factory
+import abstractfactory.factory.Link
+import abstractfactory.factory.Page
+import abstractfactory.factory.Tray
 
 class ListFactory : Factory() {
     override fun createLink(caption: String, url: String): Link {

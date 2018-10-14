@@ -1,4 +1,4 @@
-package factory
+package abstractfactory.factory
 
 abstract class Link(
     caption: String,
