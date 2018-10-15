@@ -1,6 +1,6 @@
 package bridge
 
-class CountDisplay(
+open class CountDisplay(
     impl: DisplayImpl
 ) : Display(impl) {
     fun multiDisplay(times: Int) {
